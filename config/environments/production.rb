@@ -52,7 +52,7 @@ Hummingbird::Application.configure do
   config.action_mailer.raise_delivery_errors = false
   
   # Other mailer options
-  config.action_mailer.default_url_options = { :host => 'hakanai.vikhyat.net' }
+  config.action_mailer.default_url_options = { :host => 'hummingbird.ly' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: 'smtp.sendgrid.net',
