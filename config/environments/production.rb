@@ -58,7 +58,7 @@ Hummingbird::Application.configure do
     address: 'smtp.sendgrid.net',
     port: 587,
     domain: 'hummingbird.ly',
-    user_name: 'vikhyat@hummingbird.ly',
+    user_name: 'vikhyat',
     password: 'SendToad04!',
     authentication: 'plain',
     enable_starttls_auto: true
