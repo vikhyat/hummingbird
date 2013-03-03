@@ -50,6 +50,19 @@ Hummingbird::Application.configure do
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
+  
+  # Other mailer options
+  config.action_mailer.default_url_options = { :host => 'hakanai.vikhyat.net' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.mandrillapp.com',
+    port: 587,
+#    domain: 'hummingbird.ly',
+    user_name: 'vikhyat@hummingbird.ly',
+    password: '_D9t5CJLpN4I4Of2sJ2L_g',
+    authentication: 'plain',
+    enable_starttls_auto: true
+  }
 
   # Enable threaded mode
   # config.threadsafe!
