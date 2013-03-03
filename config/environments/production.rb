@@ -55,11 +55,11 @@ Hummingbird::Application.configure do
   config.action_mailer.default_url_options = { :host => 'hakanai.vikhyat.net' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: 'smtp.gmail.com',
+    address: 'smtp.sendgrid.net',
     port: 587,
     domain: 'hummingbird.ly',
     user_name: 'vikhyat@hummingbird.ly',
-    password: 'Temp1234!',
+    password: 'SendToad04!',
     authentication: 'plain',
     enable_starttls_auto: true
   }
