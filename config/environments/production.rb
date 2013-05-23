@@ -1,4 +1,5 @@
 Hummingbird::Application.configure do
+  routes.default_url_options = {host: 'hummingbird.me'}
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
