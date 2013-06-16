@@ -56,12 +56,12 @@ Hummingbird::Application.configure do
   config.action_mailer.default_url_options = { :host => 'hummingbird.ly' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: 'smtp.sendgrid.net',
-    port: 587,
-    domain: 'hummingbird.ly',
-    user_name: 'vikhyat',
-    password: 'SendToad04!',
-    authentication: 'plain',
+    address:              'smtp.mandrillapp.com',
+    port:                 587,
+    domain:               'hummingbird.ly',
+    user_name:            'vikhyatk@gmail.com',
+    password:             'Qg5v3lRBRBbJCd_butT6PQ',
+    authentication:       'login',
     enable_starttls_auto: true
   }
 
