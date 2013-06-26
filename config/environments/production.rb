@@ -58,7 +58,7 @@ Hummingbird::Application.configure do
   config.action_mailer.smtp_settings = {
     address:              'smtp.mandrillapp.com',
     port:                 587,
-    domain:               'hummingbird.ly',
+    domain:               'hummingbird.me',
     user_name:            'vikhyatk@gmail.com',
     password:             'Qg5v3lRBRBbJCd_butT6PQ',
     authentication:       'login',
