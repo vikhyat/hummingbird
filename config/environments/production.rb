@@ -51,17 +51,17 @@ Hummingbird::Application.configure do
 
   # Disable delivery errors, bad email addresses will be ignored
   config.action_mailer.raise_delivery_errors = false
-  
+
   # Other mailer options
   config.action_mailer.default_url_options = { :host => 'hummingbird.me' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:              'smtp.sendgrid.net',
+    address:              'mail.hummingbird.me',
     port:                 587,
     domain:               'hummingbird.me',
-    user_name:            'vikhyat',
-    password:             'SendToad04!',
-    authentication:       'plain',
+    user_name:            'hummingbird',
+    password:             'KonoSekaiDeMitsuketaMono',
+    authentication:       'cram_md5',
     enable_starttls_auto: true
   }
 
