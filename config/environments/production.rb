@@ -55,13 +55,22 @@ Hummingbird::Application.configure do
   # Other mailer options
   config.action_mailer.default_url_options = { :host => 'hummingbird.me' }
   config.action_mailer.delivery_method = :smtp
+  #config.action_mailer.smtp_settings = {
+  #  address:              'mail.hummingbird.me',
+  #  port:                 587,
+  #  domain:               'hummingbird.me',
+  #  user_name:            'hummingbird',
+  #  password:             'KonoSekaiDeMitsuketaMono',
+  #  authentication:       'cram_md5',
+  #  enable_starttls_auto: true
+  #}
   config.action_mailer.smtp_settings = {
-    address:              'mail.hummingbird.me',
+    address:              'smtp.mandrillapp.com',
     port:                 587,
     domain:               'hummingbird.me',
-    user_name:            'hummingbird',
-    password:             'KonoSekaiDeMitsuketaMono',
-    authentication:       'cram_md5',
+    user_name:            'vikhyatk@gmail.com',
+    password:             'Qg5v3lRBRBbJCd_butT6PQ',
+    authentication:       'login',
     enable_starttls_auto: true
   }
 
