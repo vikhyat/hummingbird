@@ -238,3 +238,15 @@ Devise.setup do |config|
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = "/my_engine/users/auth"
 end
+
+Warden::Manager.after_set_user do |user, auth, opts|
+  auth.cookies["hb_auth"] = {
+    value: user.authentication_token,
+    domain: :all,
+    path: '/'
+  }
+end
+
+Warden::Manager.before_logout do |user, auth, opts|
+  auth.cookies.delete "hb_auth"
+end
