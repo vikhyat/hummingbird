@@ -242,7 +242,7 @@ end
 Warden::Manager.after_set_user do |user, auth, opts|
   auth.cookies["auth_token"] = {
     value: user.authentication_token,
-    expires: 1.year.from_now,
+    expires: 20.years.from_now,
     domain: :all
   }
 end
