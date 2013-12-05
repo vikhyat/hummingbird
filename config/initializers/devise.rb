@@ -240,11 +240,13 @@ Devise.setup do |config|
 end
 
 Warden::Manager.after_set_user do |user, auth, opts|
-  auth.cookies["auth_token"] = {
-    value: user.authentication_token,
-    expires: 20.years.from_now,
-    domain: :all
-  }
+  if (!opts.keys.include?(:store)) or opts[:store]
+    auth.cookies["auth_token"] = {
+      value: user.authentication_token,
+      expires: 20.years.from_now,
+      domain: :all
+    }
+  end
 end
 
 Warden::Manager.before_logout do |user, auth, opts|
