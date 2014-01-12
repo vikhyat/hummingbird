@@ -90,4 +90,5 @@ Hummingbird::Application.configure do
   config.ember.variant = :production
 
   config.react.variant = :production
+  config.react.addons = true
 end
